@@ -1,0 +1,110 @@
+:root {
+  --neon-orange: #fd1a1a;
+  --neon-cyan: #002fff;
+  --glass-bg: rgba(8, 12, 20, 0.75); /* Más oscuro para contraste */
+  --glass-border: rgba(0, 240, 255, 0.2);
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+/* --- LAYOUT GENERAL --- */
+.holo-container {
+  display: grid;
+  /* Izquierda más pegada (220px) | Centro Gigante (auto) | Derecha (280px) */
+  grid-template-columns: 220px 1fr 280px; 
+  grid-template-rows: 1fr 60px; /* Contenido | Barra Inferior */
+  gap: 30px; /* Más espacio entre paneles */
+  width: 1400px; /* MÁS ANCHO */
+  height: 850px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* --- ESTILO DE PANELES DE VIDRIO --- */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 0 30px rgba(0,0,0,0.8);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: relative; /* Para los decorativos absolutos */
+}
+
+/* --- DECORACIÓN FUTURISTA (Bordes Técnicos) --- */
+.tech-border {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  border: 1px solid transparent;
+}
+
+/* Esquinas brillantes estilo HUD */
+.tech-border::before, .tech-border::after {
+  content: ''; position: absolute; width: 15px; height: 15px;
+  border: 2px solid var(--neon-cyan); transition: all 0.3s;
+}
+.tech-border::before { top: -1px; left: -1px; border-right: none; border-bottom: none; }
+.tech-border::after { bottom: -1px; right: -1px; border-left: none; border-top: none; }
+
+/* Variante Naranja para alertas/KPIs */
+.tech-border.orange::before, .tech-border.orange::after { border-color: var(--neon-orange); }
+
+/* --- BOTONES DE NAVEGACIÓN --- */
+.nav-btn {
+  background: linear-gradient(90deg, rgba(255,255,255,0.05) 0%, transparent 100%);
+  border: none;
+  border-left: 2px solid #333;
+  color: var(--text-secondary);
+  font-size: 16px;
+  text-align: left;
+  padding: 18px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-btn:hover { background: rgba(255,255,255,0.1); padding-left: 25px; }
+
+.nav-btn.active {
+  color: var(--neon-cyan);
+  border-left: 4px solid var(--neon-cyan);
+  background: linear-gradient(90deg, rgba(0, 240, 255, 0.1) 0%, transparent 100%);
+  text-shadow: 0 0 10px rgba(0,240,255,0.5);
+}
+
+/* --- TEXTOS Y NÚMEROS --- */
+h1 { margin: 0; font-size: 3.5rem; letter-spacing: -2px; text-transform: uppercase; }
+h2 { margin: 0; font-size: 1rem; color: var(--neon-cyan); letter-spacing: 2px; margin-bottom: 10px; opacity: 0.8; }
+.big-number { font-size: 4rem; font-weight: 700; color: white; line-height: 1; letter-spacing: -2px; }
+.sub-stat { font-size: 0.8rem; color: var(--text-secondary); margin-top: 5px; }
+
+/* --- GRÁFICAS FALSAS (CSS PURO) --- */
+.fake-graph-bar {
+  display: flex; gap: 4px; align-items: flex-end; height: 40px; margin-top: 15px; opacity: 0.7;
+}
+.bar { width: 6px; background: var(--neon-orange); animation: pulseBar 2s infinite; }
+.bar:nth-child(even) { background: #444; }
+
+@keyframes pulseBar {
+  0%, 100% { opacity: 0.5; } 50% { opacity: 1; }
+}
+
+.fake-waveform {
+  width: 100%; height: 2px; background: var(--neon-cyan);
+  box-shadow: 0 0 10px var(--neon-cyan);
+  margin-top: 10px;
+}
