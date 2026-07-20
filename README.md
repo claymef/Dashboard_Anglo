@@ -14,3 +14,18 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Documentación y responsabilidades
+
+La documentación está organizada por fases de ISO/IEC/IEEE 12207 en [`docs/`](docs/).
+
+| Fase | Responsable principal | Entregables |
+|---|---|---|
+| Inicio | Marco Ponce de León | SRS (Especificación de Requisitos de Software), contrato y configuración inicial |
+| Desarrollo | Christian | Código, arquitectura y manual |
+| QA (Aseguramiento de Calidad) | Fidel | Plan de pruebas, Bug Log (registro de errores) e informe QA |
+| Operación | C. Mollo | Evaluación operativa y RFC (Solicitud Formal de Cambio) |
+| Mantenimiento | Yoset Cozco | Análisis de impacto, upgrade e informe técnico |
+| Cierre | Marco Ponce de León | Informe final y reflexiones |
+
+La asignación detallada está en [`docs/tareas/matriz_asignacion.md`](docs/tareas/matriz_asignacion.md).
