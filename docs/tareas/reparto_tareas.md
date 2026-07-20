@@ -21,7 +21,7 @@ Este documento detalla la distribución de roles, responsabilidades y tareas asi
    * **Responsabilidades:** Propietario del repositorio remoto. Mantiene la rama principal del código en React (Fase B), documenta la arquitectura técnica del código y redacta el manual de usuario básico.
 
 4. **Desarrollador de Soporte / Mantenimiento**
-   * **Integrante:** Yoset Cozco (Tú)
+   * **Integrante:** Yoset Cozco
    * **Correo UNSA:** ycozco@unsa.edu.pe
    * **Responsabilidades:** Colabora en el desarrollo de la aplicación y se encarga de codificar e implementar la mejora de mantenimiento solicitada por el cliente en una rama de Git (`feature-modo-oscuro`) y elaborar el informe de mantenimiento.
 
