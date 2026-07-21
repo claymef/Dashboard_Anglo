@@ -1,10 +1,17 @@
 # SRS - Especificación de Requisitos de Software
 
 **Código:** INI-SRS-001  
-**Versión:** 1.0  
+**Versión:** 1.1  
 **Responsable:** Marco Ponce de León  
-**Apoyo y validación:** C. Mollo  
+**Apoyo y validación:** Christian Mollo  
 **Estado:** En revisión
+
+## Historial de versiones
+
+| Versión | Descripción | Responsable |
+|---|---|---|
+| 1.0 | Versión inicial del SRS con los requisitos del dashboard web 3D. | Marco Ponce de León |
+| 1.1 | Se incorpora el RF-05 correspondiente al modo oscuro como resultado de la RFC-001 aprobada durante el proceso de mantenimiento. | Marco Ponce de León |
 
 ## Referencia normativa
 
@@ -59,7 +66,7 @@ Incluye navegación por pestañas, KPIs, mini-gráficas, panel holográfico y ro
 
 | Rol | Nombre | Fecha | Firma/confirmación |
 |---|---|---|---|
-| Cliente | C. Mollo | Pendiente | Pendiente |
+| Cliente | Christian Mollo | Pendiente | Pendiente |
 | Analista | Marco Ponce de León | Pendiente | Pendiente |
 
 **Evidencia:** requisitos numerados, validación del cliente y matriz de trazabilidad.
