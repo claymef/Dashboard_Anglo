@@ -12,6 +12,46 @@ dist
 dist-ssr
 *.local
 
+# Entorno local de Codex/agentes y herramientas auxiliares
+.agents/
+.codex/
+.mcp/
+
+# Configuración y datos locales de MiKTeX/PDF
+.miktex/
+.miktex-data/
+miktex/
+miktex-data/
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.aux
+*.out
+*.toc
+*.log
+
+# Temporales de análisis, conversión y renderizado
+tmp/
+temp/
+.cache/
+cache/
+output/
+*.bak
+*.tmp
+
+# Artefactos de Python usados para generar/revisar documentos
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Variables y credenciales locales
+.env
+.env.*
+!.env.example
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
