@@ -1,0 +1,22 @@
+flowchart TB
+    U[Usuario ejecutivo] --> B[Navegador]
+    B --> N[Nginx :80]
+    N --> HTML[dist/index.html y assets]
+    HTML --> M[src/main.jsx]
+    M --> A[src/App.jsx]
+    M --> CSS[src/index.css]
+    A --> C[React Three Fiber Canvas]
+    A --> O[OrbitControls]
+    A --> S[Stars y luces]
+    A --> H[src/HoloDashboard.jsx]
+    H --> T[Navegación y activeTab]
+    H --> K[KPIs y MiniChart]
+    H --> F[Contenido de pestañas]
+    H --> G[Html transform dentro de escena 3D]
+    CSS --> V[Tokens visuales y layout holográfico]
+    V --> G
+    P[package.json] --> D[Dockerfile multi-etapa]
+    D --> N
+    C -. interacción .-> O
+    T -. cambio aprobado .-> CHG[RFC y mantenimiento]
+    CHG --> Y[Análisis de impacto e implementación Yoset]
