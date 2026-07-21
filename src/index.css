@@ -197,6 +197,34 @@ h2 { margin: 0; font-size: 1rem; color: var(--neon-cyan); letter-spacing: 2px; m
   background: #ecfeff !important;
 }
 
+/* Corrección de contraste para textos heredados de estilos inline. */
+.theme-light .glass-panel h1,
+.theme-light .glass-panel h2,
+.theme-light .glass-panel h3,
+.theme-light .glass-panel p,
+.theme-light .glass-panel strong {
+  color: var(--text-primary) !important;
+}
+
+.theme-light .glass-panel h2,
+.theme-light .glass-panel h3 {
+  color: #1e40af !important;
+}
+
+.theme-light .glass-panel p {
+  color: #475569 !important;
+}
+
+.theme-light .glass-panel [style*="border: 1px solid"] {
+  color: var(--text-primary) !important;
+  border-color: #94a3b8 !important;
+  background: #f1f5f9;
+}
+
+.theme-light .glass-panel [style*="color: '#00f0ff'"] {
+  color: #0369a1 !important;
+}
+
 .theme-toggle {
   width: 100%;
   margin-top: 18px;
