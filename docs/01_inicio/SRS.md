@@ -32,11 +32,11 @@ Incluye navegación por pestañas, KPIs, mini-gráficas, panel holográfico y ro
 
 | ID | Requisito | Prioridad | Criterio de aceptación | Prueba |
 |---|---|---|---|---|
-| RF-01 | Mostrar un dashboard con navegación, contenido e indicadores | Alta | Las tres zonas son visibles al cargar | CP-01 |
-| RF-02 | Permitir cambiar entre Resumen, Impacto, Inversión y Aliados | Alta | Cada pestaña muestra contenido diferenciado | CP-02 |
-| RF-03 | Mostrar KPIs y mini-gráficas | Alta | Los valores y etiquetas son legibles | CP-03 |
-| RF-04 | Permitir rotación 3D limitada | Media | El usuario puede rotar sin perder el control | CP-04 |
-| RF-05 | Aplicar modo oscuro solicitado | Media | La interfaz cambia de tema y conserva legibilidad | CP-08 |
+| RF-01 | Mostrar un dashboard con navegación, contenido e indicadores | Alta | El dashboard presenta correctamente las tres zonas principales (navegación, contenido e indicadores) inmediatamente después de la carga inicial de la aplicación. | CP-01 |
+| RF-02 | Permitir cambiar entre Resumen, Impacto, Inversión y Aliados | Alta | La selección de cada pestaña actualiza el contenido mostrado de manera correcta, diferenciando la información correspondiente a cada categoría. | CP-02 |
+| RF-03 | Mostrar KPIs y mini-gráficas | Alta | Los indicadores, etiquetas y mini-gráficas se visualizan correctamente, manteniendo legibilidad y consistencia en la interfaz. | CP-03 |
+| RF-04 | Permitir rotación 3D limitada | Media | La escena permite la rotación mediante interacción del usuario sin producir movimientos inesperados ni perder el enfoque del panel principal. | CP-04 |
+| RF-05 | Aplicar modo oscuro solicitado | Media | El cambio entre modo claro y modo oscuro modifica la apariencia de la interfaz preservando la legibilidad de los indicadores, controles y elementos gráficos. | CP-08 |
 
 ## 4. Requisitos no funcionales
 
