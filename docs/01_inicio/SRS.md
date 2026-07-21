@@ -8,11 +8,15 @@
 
 ## Referencia normativa
 
-Documento asociado al proceso de adquisición, definición de necesidades y requisitos del software de ISO/IEC/IEEE 12207:2017. Se complementa con la guía académica MCDES ubicada en `docs/guia/`.
+Este documento forma parte del proceso de definición de requisitos del software dentro de la simulación académica basada en la norma ISO/IEC/IEEE 12207:2017. Su estructura toma como referencia los principios de la Especificación de Requisitos de Software (SRS) definidos por IEEE 830. Se complementa con la guía académica MCDES ubicada en `docs/guia/`.
+
+## Introducción
+
+Este documento especifica los requisitos funcionales y no funcionales del Dashboard Web 3D para la visualización de indicadores ejecutivos del proyecto Quellaveco. Su propósito es servir como base para el diseño, implementación, verificación, validación y mantenimiento del sistema dentro de la simulación académica basada en la norma ISO/IEC/IEEE 12207.
 
 ## 1. Propósito y alcance
 
-El sistema es un dashboard web 3D para presentar indicadores ejecutivos del proyecto Quellaveco. Es una demostración académica y no se conecta a bases de datos reales ni reemplaza sistemas operativos de Anglo American.
+El sistema es un dashboard web 3D para presentar indicadores ejecutivos del proyecto Quellaveco. Es una demostración académica y no se conecta a bases de datos reales ni reemplaza los sistemas de información existentes de Anglo American.
 
 Incluye navegación por pestañas, KPIs, mini-gráficas, panel holográfico y rotación 3D limitada. Excluye autenticación, datos reales, exportación PDF y despliegue productivo.
 
@@ -26,13 +30,13 @@ Incluye navegación por pestañas, KPIs, mini-gráficas, panel holográfico y ro
 
 ## 3. Requisitos funcionales
 
-| ID | Requisito | Criterio de aceptación | Prueba |
-|---|---|---|---|
-| RF-01 | Mostrar un dashboard con navegación, contenido e indicadores | Las tres zonas son visibles al cargar | CP-01 |
-| RF-02 | Permitir cambiar entre Resumen, Impacto, Inversión y Aliados | Cada pestaña muestra contenido diferenciado | CP-02 |
-| RF-03 | Mostrar KPIs y mini-gráficas | Los valores y etiquetas son legibles | CP-03 |
-| RF-04 | Permitir rotación 3D limitada | El usuario puede rotar sin perder el control | CP-04 |
-| RF-05 | Aplicar modo oscuro solicitado | La interfaz cambia de tema y conserva legibilidad | CP-08 |
+| ID | Requisito | Prioridad | Criterio de aceptación | Prueba |
+|---|---|---|---|---|
+| RF-01 | Mostrar un dashboard con navegación, contenido e indicadores | Alta | Las tres zonas son visibles al cargar | CP-01 |
+| RF-02 | Permitir cambiar entre Resumen, Impacto, Inversión y Aliados | Alta | Cada pestaña muestra contenido diferenciado | CP-02 |
+| RF-03 | Mostrar KPIs y mini-gráficas | Alta | Los valores y etiquetas son legibles | CP-03 |
+| RF-04 | Permitir rotación 3D limitada | Media | El usuario puede rotar sin perder el control | CP-04 |
+| RF-05 | Aplicar modo oscuro solicitado | Media | La interfaz cambia de tema y conserva legibilidad | CP-08 |
 
 ## 4. Requisitos no funcionales
 
