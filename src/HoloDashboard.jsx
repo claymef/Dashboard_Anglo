@@ -115,6 +115,50 @@ export function HoloDashboard() {
 
              {/* Puedes agregar más bloques para INVERSION y ALIADOS aquí siguiendo el mismo patrón */}
 
+            {activeTab === 'INVERSION' && (
+              <motion.div
+                key="inversion"
+                initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
+                style={{ height: '100%', padding: '40px' }}
+              >
+                <h1 style={{ fontSize: '2.5rem' }}>INVERSIÓN <span style={{ color: '#ff6030' }}>SOCIAL</span></h1>
+                <p style={{ fontSize: '1rem', color: '#aaa', maxWidth: '600px', lineHeight: '1.6' }}>
+                  Distribución demostrativa de iniciativas y recursos del periodo evaluado.
+                </p>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px', marginTop: '35px' }}>
+                  {['Programas priorizados', 'Recursos comprometidos', 'Avance de ejecución'].map((label, index) => (
+                    <div key={label} className="glass-panel" style={{ minHeight: '130px', justifyContent: 'center' }}>
+                      <h2>{label}</h2>
+                      <div className="big-number">{['12', '68%', '74%'][index]}</div>
+                      <div className="sub-stat">Dato demostrativo</div>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+
+            {activeTab === 'ALIADOS' && (
+              <motion.div
+                key="aliados"
+                initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
+                style={{ height: '100%', padding: '40px' }}
+              >
+                <h1 style={{ fontSize: '2.5rem' }}>RED DE <span style={{ color: '#002fff' }}>ALIADOS</span></h1>
+                <p style={{ fontSize: '1rem', color: '#aaa', maxWidth: '600px', lineHeight: '1.6' }}>
+                  Actores y organizaciones representados para fines de demostración ejecutiva.
+                </p>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginTop: '35px' }}>
+                  {['Instituciones participantes', 'Comunidades vinculadas', 'Convenios activos', 'Mesas de coordinación'].map((label, index) => (
+                    <div key={label} className="glass-panel" style={{ minHeight: '120px', justifyContent: 'center' }}>
+                      <h2>{label}</h2>
+                      <div className="big-number">{['24', '18', '09', '06'][index]}</div>
+                      <div className="sub-stat">Dato demostrativo</div>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+
           </AnimatePresence>
         </div>
 
