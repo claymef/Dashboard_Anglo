@@ -132,7 +132,7 @@ El resultado final demuestra que la integración de buenas prácticas de ingenie
 
 ---
 
-## 16. Anexos: capturas, commits, PR, tablas y evidencias
+## 16. Anexos
 
 El informe final se apoya en una colección de evidencias visuales y documentales que complementan el contenido. Entre ellas destacan las capturas de verificación de datos, de modo claro y oscuro, de pestañas y del despliegue en contenedores, así como los documentos de arquitectura, trazabilidad, QA y release.
 
