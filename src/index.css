@@ -119,8 +119,8 @@ h2 { margin: 0; font-size: 1rem; color: var(--neon-cyan); letter-spacing: 2px; m
 }
 
 .theme-light .glass-panel {
-  border-color: rgba(0, 47, 255, 0.16);
-  box-shadow: 0 0 24px rgba(31, 54, 88, 0.18);
+  border-color: #cbd5e1;
+  box-shadow: 0 0 24px rgba(15, 23, 42, 0.14);
 }
 
 .theme-light .nav-btn {
@@ -132,6 +132,69 @@ h2 { margin: 0; font-size: 1rem; color: var(--neon-cyan); letter-spacing: 2px; m
 .theme-light h1,
 .theme-light h2 {
   color: var(--text-primary);
+}
+
+/* Paleta clara estable: superficies, texto, bordes y acentos compatibles. */
+.holo-container.theme-light {
+  --neon-orange: #c2410c;
+  --neon-cyan: #1d4ed8;
+  --glass-bg: #f8fafc;
+  --glass-border: #94a3b8;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+}
+
+.theme-light .tech-border::before,
+.theme-light .tech-border::after {
+  border-color: var(--neon-cyan);
+}
+
+.theme-light .tech-border.orange::before,
+.theme-light .tech-border.orange::after {
+  border-color: var(--neon-orange);
+}
+
+.theme-light .nav-btn.active {
+  color: #1e40af;
+  border-left-color: #1d4ed8;
+  background: #dbeafe;
+  text-shadow: none;
+}
+
+.theme-light .nav-btn:hover {
+  background: #e2e8f0;
+}
+
+.theme-light [style*="color: white"],
+.theme-light [style*="color: #ffffff"],
+.theme-light [style*="color: '#ffffff'"] {
+  color: var(--text-primary) !important;
+}
+
+.theme-light [style*="color: #ccc"],
+.theme-light [style*="color: '#ccc'"] {
+  color: var(--text-secondary) !important;
+}
+
+.theme-light [style*="color: #aaa"],
+.theme-light [style*="color: '#aaa'"] {
+  color: #475569 !important;
+}
+
+.theme-light [style*="background: rgba(255,255,255,0.05)"],
+.theme-light [style*="background: 'rgba(255,255,255,0.05)'"] {
+  background: #e2e8f0 !important;
+}
+
+.theme-light [style*="background: rgba(0,0,0,0.5)"],
+.theme-light [style*="background: 'rgba(0,0,0,0.5)'"] {
+  background: #e2e8f0 !important;
+  border-color: #94a3b8 !important;
+}
+
+.theme-light [style*="background: rgba(0,240,255,0.05)"],
+.theme-light [style*="background: 'rgba(0,240,255,0.05)'"] {
+  background: #ecfeff !important;
 }
 
 .theme-toggle {
