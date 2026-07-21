@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Html } from '@react-three/drei';
 import { motion, AnimatePresence } from 'framer-motion';
+import { seedDashboardData } from './data/seedData';
 
 // Componente pequeño para simular una gráfica de barras en CSS
 const MiniChart = () => (
@@ -14,12 +15,14 @@ const MiniChart = () => (
 export function HoloDashboard() {
   const [activeTab, setActiveTab] = useState('RESUMEN');
 
-  // DATOS DEL PPT (KPIs derechos)
+  const seedKpis = seedDashboardData.kpis;
+
+  /* DATOS DEL PPT (KPIs legacy)
   const kpis = [
     { label: "COBERTURA", value: "38", sub: "Eventos Ejecutados", chart: true },
     { label: "ALCANCE", value: "100%", sub: "Región Moquegua", chart: false },
     { label: "RETORNO", value: "ALTO", sub: "Valor Compartido", chart: true }
-  ];
+  ]; */
 
   return (
     <Html transform position={[0, 0, 0]} distanceFactor={1.5}>
@@ -117,7 +120,7 @@ export function HoloDashboard() {
 
         {/* --- 3. ZONA DERECHA: DATOS + GRÁFICAS --- */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-            {kpis.map((kpi, i) => (
+            {seedKpis.map((kpi, i) => (
                <div key={i} className="glass-panel" style={{ justifyContent: 'center', minHeight: '120px' }}>
                   <div className="tech-border orange"></div>
                   <h2 style={{ fontSize: '0.7rem' }}>{kpi.label}</h2>
