@@ -14,6 +14,7 @@ const MiniChart = () => (
 
 export function HoloDashboard() {
   const [activeTab, setActiveTab] = useState('RESUMEN');
+  const [darkMode, setDarkMode] = useState(true);
 
   const seedKpis = seedDashboardData.kpis;
 
@@ -26,7 +27,7 @@ export function HoloDashboard() {
 
   return (
     <Html transform position={[0, 0, 0]} distanceFactor={1.5}>
-      <div className="holo-container">
+      <div className={`holo-container ${darkMode ? 'theme-dark' : 'theme-light'}`}>
         
         {/* --- 1. ZONA IZQUIERDA: MENÚ TÁCTIL --- */}
         <div className="glass-panel" style={{ justifyContent: 'space-between' }}>
@@ -51,6 +52,15 @@ export function HoloDashboard() {
               </button>
               <button className={`nav-btn ${activeTab === 'ALIADOS' ? 'active' : ''}`} onClick={() => setActiveTab('ALIADOS')}>
                 ☷ ALIADOS
+              </button>
+              <button
+                className="theme-toggle"
+                type="button"
+                onClick={() => setDarkMode((current) => !current)}
+                aria-pressed={darkMode}
+                aria-label={darkMode ? 'Activar tema claro' : 'Activar modo oscuro'}
+              >
+                {darkMode ? '☀ TEMA CLARO' : '◐ MODO OSCURO'}
               </button>
             </nav>
           </div>
