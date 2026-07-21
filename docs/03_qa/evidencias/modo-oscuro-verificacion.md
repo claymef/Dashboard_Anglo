@@ -3,7 +3,7 @@
 **Caso:** CP-08  
 **Rama:** `feature/modo-oscuro`  
 **Responsable:** Yoset Cozco  
-**Estado:** Verificación técnica aprobada; captura visual pendiente
+**Estado:** Verificación técnica y visual aprobada
 
 ## Implementación
 
@@ -23,13 +23,18 @@
 | Control de tema presente | Implementado |
 | Estado accesible (`aria-pressed`) | Implementado |
 | Datos y KPIs modificados | No |
-| Captura claro/oscuro | Pendiente |
+| Captura claro/oscuro | Aprobado |
 
 ## Evidencia visual requerida
 
-Guardar las capturas del navegador en:
+Las capturas del navegador se anexaron al repositorio y a Drive:
 
 ```text
 docs/03_qa/evidencias/modo-oscuro.png
 docs/03_qa/evidencias/modo-claro.png
 ```
+
+Archivos finales:
+
+- `modo-oscuro-dashboard.png`.
+- `modo-claro-dashboard.png`.
