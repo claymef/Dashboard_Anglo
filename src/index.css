@@ -108,3 +108,47 @@ h2 { margin: 0; font-size: 1rem; color: var(--neon-cyan); letter-spacing: 2px; m
   box-shadow: 0 0 10px var(--neon-cyan);
   margin-top: 10px;
 }
+
+/* Tema claro alternativo del cambio RFC-001. */
+.holo-container.theme-light {
+  --glass-bg: rgba(244, 248, 252, 0.88);
+  --glass-border: rgba(0, 47, 255, 0.2);
+  --text-primary: #101522;
+  --text-secondary: #445064;
+  color: var(--text-primary);
+}
+
+.theme-light .glass-panel {
+  border-color: rgba(0, 47, 255, 0.16);
+  box-shadow: 0 0 24px rgba(31, 54, 88, 0.18);
+}
+
+.theme-light .nav-btn {
+  color: var(--text-secondary);
+  background: linear-gradient(90deg, rgba(0, 47, 255, 0.08) 0%, transparent 100%);
+}
+
+.theme-light .big-number,
+.theme-light h1,
+.theme-light h2 {
+  color: var(--text-primary);
+}
+
+.theme-toggle {
+  width: 100%;
+  margin-top: 18px;
+  padding: 10px 8px;
+  border: 1px solid var(--glass-border);
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  color: var(--neon-cyan);
+  outline: 2px solid var(--neon-cyan);
+  outline-offset: 2px;
+}
