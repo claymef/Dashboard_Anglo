@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Html } from '@react-three/drei';
 import { motion, AnimatePresence } from 'framer-motion';
 import { seedDashboardData } from './data/seedData';
@@ -15,6 +15,11 @@ const MiniChart = () => (
 export function HoloDashboard() {
   const [activeTab, setActiveTab] = useState('RESUMEN');
   const [darkMode, setDarkMode] = useState(true);
+
+  useEffect(() => {
+    document.documentElement.style.setProperty('--app-background', darkMode ? '#020617' : '#dbe4ee');
+    document.documentElement.style.setProperty('--app-surface', darkMode ? '#020617' : '#dbe4ee');
+  }, [darkMode]);
 
   const seedKpis = seedDashboardData.kpis;
 

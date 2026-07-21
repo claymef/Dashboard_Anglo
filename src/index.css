@@ -9,7 +9,7 @@
 
 body {
   margin: 0;
-  background: #000;
+  background: var(--app-background, #020617);
   font-family: 'Segoe UI', 'Roboto', sans-serif;
   overflow: hidden;
 }
@@ -116,6 +116,15 @@ h2 { margin: 0; font-size: 1rem; color: var(--neon-cyan); letter-spacing: 2px; m
   --text-primary: #101522;
   --text-secondary: #445064;
   color: var(--text-primary);
+}
+
+.holo-container.theme-light::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #dbe4ee 0%, #eef2f7 52%, #cbd5e1 100%);
+  z-index: -1;
+  pointer-events: none;
 }
 
 .theme-light .glass-panel {

@@ -5,7 +5,7 @@ import { HoloDashboard } from './HoloDashboard';
 
 function App() {
   return (
-    <div style={{ width: '100vw', height: '100vh', background: 'black' }}>
+    <div style={{ width: '100vw', height: '100vh', background: 'var(--app-background, #000)' }}>
       <Canvas camera={{ position: [0, 0, 12], fov: 35 }}>
         
         {/* 1. Iluminación */}
