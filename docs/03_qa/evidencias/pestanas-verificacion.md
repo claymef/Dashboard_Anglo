@@ -3,7 +3,7 @@
 **Caso:** CP-09  
 **Rama:** `feature/completar-pestanas`  
 **Responsable:** Yoset Cozco  
-**Estado:** Verificación técnica aprobada; captura visual pendiente
+**Estado:** Verificación técnica y visual aprobada
 
 ## Implementación
 
@@ -29,9 +29,9 @@ src/HoloDashboard.jsx
 | Contenido Aliados | Implementado |
 | Datos productivos | No utilizados |
 
-## Evidencia visual pendiente
+## Evidencia visual
 
-Capturar las cuatro pestañas desde el navegador y guardar las imágenes en:
+Las capturas disponibles se guardaron en Drive dentro de `03_evidencias` y en el repositorio:
 
 ```text
 docs/03_qa/evidencias/pestana-resumen.png
@@ -39,3 +39,11 @@ docs/03_qa/evidencias/pestana-impacto.png
 docs/03_qa/evidencias/pestana-inversion.png
 docs/03_qa/evidencias/pestana-aliados.png
 ```
+
+Archivos disponibles actualmente:
+
+- `seed-data-verificacion.png` - Resumen.
+- `seed-data-inversion.png` - Inversión.
+- `seed-data-aliados.png` - Aliados.
+
+La pestaña Impacto queda cubierta por la evidencia de la primera captura y deberá anexarse con el nombre normalizado cuando se genere una captura específica.
