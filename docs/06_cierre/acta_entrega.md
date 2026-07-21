@@ -28,5 +28,5 @@ El equipo entrega la versión candidata del dashboard, la documentación del cic
 
 | Parte | Nombre | Fecha | Firma/confirmación |
 |---|---|---|---|
-| Cliente | C. Mollo | Pendiente | Pendiente |
+| Cliente | Christian Mollo | Pendiente | Pendiente |
 | Proveedor/equipo | Marco Ponce de León | Pendiente | Pendiente |
