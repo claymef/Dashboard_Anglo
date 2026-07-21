@@ -2,9 +2,9 @@
 
 **Código:** OPE-PROP-001  
 **Proceso:** Operación, adquisición, validación y mantenimiento - ISO/IEC/IEEE 12207:2017  
-**Solicitante de revisión:** Cliente simulado  
+**Solicitante de revisión:** Harry Mollo Mayta, cliente  
 **Responsable:** Marco Ponce de León  
-**Estado:** Propuesta para revisión
+**Estado:** Revisada en simulación académica
 
 ## 1. Objetivo
 

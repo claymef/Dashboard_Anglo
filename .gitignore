@@ -52,6 +52,20 @@ env/
 .env.*
 !.env.example
 
+# Contenedores: versionar Dockerfile y compose base; ignorar secretos y datos locales
+.env.docker
+.env.*.local
+docker-compose.override.yml
+docker-compose.local.yml
+docker-data/
+docker-volumes/
+*.tar
+*.tar.gz
+
+# Salidas locales de despliegue
+deploy/local/
+deploy/.generated/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

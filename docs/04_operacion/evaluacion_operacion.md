@@ -4,7 +4,8 @@
 **Proceso:** Operación y validación - ISO/IEC/IEEE 12207:2017  
 **Responsable:** C. Mollo  
 **Apoyo:** Fidel  
-**Estado:** Pendiente
+**Cliente:** Harry Mollo Mayta  
+**Estado:** Evaluación completada; pendiente de confirmación formal
 
 ## Escenario
 
@@ -23,8 +24,8 @@ El usuario ejecutivo consulta el dashboard en una reunión simulada sobre indica
 
 ## Conclusión del cliente
 
-**Resultado:** Pendiente.  
-**Observaciones:** Pendiente.  
-**Aceptación:** Pendiente.
+**Resultado:** Aceptado con observaciones.  
+**Observaciones:** completar Inversión y Aliados, implementar modo oscuro y rotular los datos como demostrativos.  
+**Aceptación:** autoriza análisis e implementación de RFC-001 y RFC-002; RFC-003 queda diferida a `v1.2.0`.
 
 **Evidencia:** escenario, fecha, versión, observaciones y confirmación del cliente.

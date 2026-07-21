@@ -1,0 +1,10 @@
+services:
+  dashboard-anglo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dashboard-anglo:local
+    container_name: dashboard-anglo-local
+    ports:
+      - "8081:80"
+    restart: unless-stopped
